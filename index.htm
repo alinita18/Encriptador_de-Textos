@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Encriptador de Textos</title>
 </head>
 <body>
-    
+    <header>
+        <img src="./assets/Logo.png" alt="Logotipo de Alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="texto_plano" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>    
+            <div>
+                <img src="./assets/bi_exclamation-circle-fill.png" alt="Icono con signo de exclamación" class="simbolo">
+                <h6 class="requerimiento_texto">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <input class="encriptar" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">    
+            </div>
+        </section>
+        <section>
+            <textarea class="texto_encriptado" placeholder="Ingrese el texto aqui" cols="20" rows="10"></textarea>
+            <input class="copiar" type="button" value="Copiar" onclick="copiar()">
+        </section>
+        
+    </main>
+    <footer>
+        <h2>Creado por:</h2>
+        <h3>Alina Peñalver Ojeda</h3>
+    </footer>
 </body>
 </html>
