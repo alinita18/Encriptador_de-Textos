@@ -1,6 +1,139 @@
-:root {
-    --color-primaria: #000000;
+*{
+    background: #F3F5FC;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
     
-    --fuente-krona: 'Krona One', sans-serif;
-    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+/*body{
+    box-sizing: border-box;
+    width: 1440px;
+    height: 1024px;
+    top: 622px;
+    left: -2277px;
+    gap: 0px;
+    opacity: 0px;
+
+}*/
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: white;
+    --color-terciario: #D8DFE8;  
+    --color-cuarto: #495057;
+}
+main{
+    display: flex;
+    padding-top: 2%;
+    margin-bottom: 50px;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+.logo{
+    padding-top: 1%;
+    margin-left: 1.5%;
+    width: 100%;    
+}
+.texto_plano{
+    border:none ;
+    color: var(--color-primario);
+    margin-top: 20%;
+    margin-left: 10%;
+    /*text-transform: lowercase;*/
+}
+::placeholder{ color: var(--color-primario)}
+    .texto_plano:focus{
+        outline: none; /* Con esta propiedad se elimina el foco, de forma que cuando se pasa el cursor sobre la caja, no se muestran los bordes*/
+    }
+.texto_encriptado{
+    background: var(--color-secundario);
+    background-image: url(./assets/Muñeco.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color:var(--color-primario);
+    margin-left: 98px;
+    /*margin-top: 20px;*/
+    padding-left: 20px;
+    position: absolute;
+    width: 25%;
+    height:100%;
+    padding-top: 2%;
+
+}
+.texto_encriptado:focus{
+    outline: none;
+}
+.warning{
+    margin-left: 10%;
+    gap: 10px;
+    opacity: 0.8px;
+    display: flex;
+    
+}
+.simbolo{
+    width: 2%;
+    height: 2%;
+    padding-top: 0.5%;
+    opacity: 0px;
+
+}
+.requerimiento_texto{
+    color: var(--color-cuarto);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.botones{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 12px;
+    margin-bottom: 5%;
+}
+.encriptar{
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color:var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    text-align: center;
+}
+.desencriptar{
+    background: var(--color-terciario);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    color:var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    text-align: center;
+}
+.copiar{
+    border: 1px solid var(--color-terciario);
+    border-radius: 24px;
+    color: var(--color-primario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 8.5%;
+    margin-top: 43.5%;
+    position: absolute;
+    width: 336px;
+    text-align: center;
+}
+footer{
+    color: var(--color-primario);
+    font-weight: 400; 
+    text-align: center;   
+}
+.separador{
+    border: none; /* Eliminar el borde predeterminado */  
+    height: 2px; /* Ajustar la altura */  
+    background-color: #000; /* Cambiar el color de fondo */  
+    margin: 20px 0; 
 }

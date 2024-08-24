@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <title>Encriptador de Textos</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/Logo.png" alt="Logotipo de Alura" class="logo">
+    <header>        
     </header>
     <main>
         <section>
+            <img src="./assets/Logo.png" alt="Logotipo de Alura" class="logo">
+        </section>
+        <section>            
             <textarea class="texto_plano" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>    
-            <div>
+            <div class="warning">
                 <img src="./assets/bi_exclamation-circle-fill.png" alt="Icono con signo de exclamación" class="simbolo">
                 <h6 class="requerimiento_texto">Solo letras minúsculas y sin acentos</h6>
             </div>
@@ -23,14 +29,14 @@
             </div>
         </section>
         <section>
-            <textarea class="texto_encriptado" placeholder="Ingrese el texto aqui" cols="20" rows="10"></textarea>
+            <textarea class="texto_encriptado" cols="20" rows="10"></textarea>
             <input class="copiar" type="button" value="Copiar" onclick="copiar()">
         </section>
         
     </main>
     <footer>
-        <h2>Creado por:</h2>
-        <h3>Alina Peñalver Ojeda</h3>
+        <hr class="separador">
+        <h2>Creado por: Alina Peñalver Ojeda</h2>
     </footer>
 </body>
 </html>
