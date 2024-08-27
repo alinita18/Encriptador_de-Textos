@@ -9,16 +9,6 @@
     margin: 0;
     
 }
-/*body{
-    box-sizing: border-box;
-    width: 1440px;
-    height: 1024px;
-    top: 622px;
-    left: -2277px;
-    gap: 0px;
-    opacity: 0px;
-
-}*/
 :root {
     --color-primario: #0A3871;
     --color-secundario: white;
@@ -173,4 +163,8 @@ footer{
     text-align: center;  
     background-color: var(--color-primario);
     line-height: 130%;
+}
+
+@media only screen and (max-width: 764px){
+    flex-direction: row;;    
 }
