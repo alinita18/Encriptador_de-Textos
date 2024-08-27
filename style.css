@@ -42,6 +42,7 @@ main{
     color: var(--color-primario);
     margin-top: 20%;
     margin-left: 10%;
+    resize: none;
     /*text-transform: lowercase;*/
 }
 ::placeholder{ color: var(--color-primario)}
@@ -51,17 +52,20 @@ main{
 .texto_encriptado{
     background: var(--color-secundario);
     background-image: url(./assets/Muñeco.png);
+    background-position: 30% 30%;
+    background-size: 90%;
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
     color:var(--color-primario);
-    margin-left: 98px;
+    margin-left: 15%;
     /*margin-top: 20px;*/
     padding-left: 20px;
     position: absolute;
-    width: 25%;
+    width: 23%;
     height:100%;
     padding-top: 2%;
+    resize: none;
 
 }
 .texto_encriptado:focus{
@@ -114,26 +118,59 @@ main{
     width: 328px;
     text-align: center;
 }
+.mensajes{
+    margin-left:120%;
+    margin-top: 190%;
+    position: relative;    
+    width:80%;
+    align-content: center;
+    background-color: var(--color-secundario);
+}
+
+.mensajebold{    
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: #343A40;     
+    line-height: 130%; 
+    background-color: var(--color-secundario);
+    padding-bottom: 5%;   
+}
+.mensajenormal{
+    color: #495057;
+    font-size: x-small;
+    text-align: center;
+    line-height: 130%;
+    background-color: var(--color-secundario);
+}
 .copiar{
-    border: 1px solid var(--color-terciario);
+    border: 1px solid var(--color-primario);
     border-radius: 24px;
-    color: var(--color-primario);
+    color: var(--color-primario);    
+    background-color: var(--color-secundario);
     cursor: pointer;
     height: 67px;
-    margin-left: 8.5%;
-    margin-top: 43.5%;
+    margin-left: -28%;
+    margin-top: 55%;
     position: absolute;
     width: 336px;
     text-align: center;
+    visibility: hidden;
 }
 footer{
-    color: var(--color-primario);
-    font-weight: 400; 
-    text-align: center;   
+    color: var(--color-terciario);  
+    background-color: var(--color-primario);
 }
 .separador{
-    border: none; /* Eliminar el borde predeterminado */  
+    border: none; /* Eliminar el borde predeterminado*/  
     height: 2px; /* Ajustar la altura */  
-    background-color: #000; /* Cambiar el color de fondo */  
+    background-color: var(--color-primario);
     margin: 20px 0; 
+    
+}
+.footer_texto{
+    font-size: small;
+    text-align: center;  
+    background-color: var(--color-primario);
+    line-height: 130%;
 }

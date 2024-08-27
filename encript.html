@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -18,28 +18,26 @@
             <img src="./assets/Logo.png" alt="Logotipo de Alura" class="logo">
         </section>
         <section>            
-            <textarea class="texto_plano" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>    
+            <textarea class="texto_plano" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>    
             <div class="warning">
                 <img src="./assets/bi_exclamation-circle-fill.png" alt="Icono con signo de exclamación" class="simbolo">
                 <h6 class="requerimiento_texto">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <input class="encriptar" type="button" value="Encriptar" onclick="btnEncriptar()">
-                <input class="desencriptar" type="button" value="Desencriptar" onclick="btnDesencriptar()">    
+                <input class="encriptar" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">    
             </div>
         </section>
         <section>
-            <textarea class="texto_encriptado" cols="20" rows="10" oninput = "limpiar()"></textarea>
+            <textarea class="texto_encriptado" cols="20" rows="10"></textarea>
             <div class="mensajes">
-                <div class="mensajeUno">
+                <div>
                     <h2 class="mensajebold">Ningún mensaje fue encontrado</h2>                
-                <div class="mensajeDos">
-                    <p class="mensajenormal">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div>
+                    <p class="mensajenormal ">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
-            <div>
-                <input class="copiar" type="button" value="Copiar" onclick="btnCopiar()">
-            </div>
+            <input class="copiar" type="button" value="Copiar" onclick="copiar()">
         </section>
         
     </main>
@@ -48,6 +46,5 @@
         <h2 class="footer_texto">Creado por: Alina Peñalver Ojeda</h2>
         <h2 class="footer_texto">ALURA LATAM</h2>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
