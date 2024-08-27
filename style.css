@@ -164,8 +164,38 @@ footer{
     line-height: 130%;
 }
 
-@media (max-width: 764px) and (max-height: 1174){
-    main{
-        flex-direction: row;
-    }   
+@media (max-width: 768px) and (max-height: 1174px) {
+    main {
+        flex-direction: column; /* Para pantallas estrechas, mantener el diseño en columna */
+    }
+
+    .texto_encriptado {
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+
+    .botones {
+        flex-direction: column; /* Botones en columna para pantallas más pequeñas */
+    }
+
+    .encriptar,
+    .desencriptar {
+        width: 100%; /* Botones ocupan todo el ancho disponible */
+        margin-left: 0; /* Elimina márgenes laterales */
+        margin-bottom: 10px; /* Espaciado entre botones */
+    }
+
+    .desencriptar {
+        margin-left: 0; /* Elimina márgenes laterales */
+    }
+
+    .mensajes {
+        margin-left: 0; /* Elimina márgenes laterales */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+    .copiar {
+        width: 100%; /* Botón ocupará todo el ancho disponible */
+        margin-left: 0; /* Elimina márgenes laterales */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
 }
