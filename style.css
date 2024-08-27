@@ -33,7 +33,6 @@ main{
     margin-top: 20%;
     margin-left: 10%;
     resize: none;
-    /*text-transform: lowercase;*/
 }
 ::placeholder{ color: var(--color-primario)}
     .texto_plano:focus{
@@ -165,6 +164,8 @@ footer{
     line-height: 130%;
 }
 
-@media only screen and (max-width: 764px){
-    flex-direction: row;;    
+@media (max-width: 764px) and (max-height: 1174){
+    main{
+        flex-direction: row;
+    }   
 }

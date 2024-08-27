@@ -65,7 +65,7 @@ function limpiar(){
     }
 }
 function validaEncriptar(texto_plano){
-    const regex = /^[A-Z0-9ÁÉÍÓÚÜÑÇÀÈÌÒÙÂÊÎÔÛÄËÏÖÜŸÝ~ªº!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]*$/;
+    const regex = /[A-Z0-9¡¿ñÑáéíóúüÁÉÍÓÚÜÒòçÇ!@#$%^&*(),.?":{}|<>~`_+=\-[\]\\\/ºª]/u;
     if(regex.test(texto_plano)){
         alert("El texto a encriptar solo debe contener letras minúsculas, sin acentos ni caracteres especiales");
         return 0;
@@ -73,7 +73,7 @@ function validaEncriptar(texto_plano){
     return 1;
 }
 function validaDesencriptar(texto_encriptado){
-    const regex = /^[A-Z0-9ÁÉÍÓÚÜÑÇÀÈÌÒÙÂÊÎÔÛÄËÏÖÜŸÝ~ªº!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~\s]*$/;
+    const regex = /[A-Z0-9¡¿ñÑáéíóúüÁÉÍÓÚÜÒòçÇ!@#$%^&*(),.?":{}|<>~`_+=\-[\]\\\/ºª]/u;
     if(regex.test(texto_encriptado)){
         alert("El texto a desencriptar solo debe contener letras minúsculas, sin acentos ni caracteres especiales");
         return 0;
