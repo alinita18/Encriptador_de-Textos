@@ -166,36 +166,43 @@ footer{
 
 @media (max-width: 768px) and (max-height: 1174px) {
     main {
-        flex-direction: column; /* Para pantallas estrechas, mantener el diseño en columna */
+        flex-direction: column; /* Diseño en columna para pantallas estrechas */
+    }
+
+    .logo {
+        margin-top: 50%; /* Centra el logo horizontalmente */
+        max-width: 20%; /* Asegura que el logo no exceda el ancho del contenedor */
     }
 
     .texto_encriptado {
-        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        width: 90%; /* Ajusta el ancho del texto encriptado */
+        margin: 0 auto; /* Centra el texto encriptado */
     }
 
     .botones {
-        flex-direction: column; /* Botones en columna para pantallas más pequeñas */
+        flex-direction: column; /* Botones en columna para pantallas pequeñas */
+        margin-left: 0; /* Elimina márgenes laterales */
+        margin-right: 0; /* Elimina márgenes laterales */
     }
 
     .encriptar,
     .desencriptar {
-        width: 100%; /* Botones ocupan todo el ancho disponible */
-        margin-left: 0; /* Elimina márgenes laterales */
-        margin-bottom: 10px; /* Espaciado entre botones */
-    }
-
-    .desencriptar {
+        width: 100%; /* Botones ocupan el ancho completo */
         margin-left: 0; /* Elimina márgenes laterales */
     }
 
     .mensajes {
         margin-left: 0; /* Elimina márgenes laterales */
-        margin-top: 20px; /* Ajusta el margen superior */
+        margin-right: 0; /* Elimina márgenes laterales */
     }
 
     .copiar {
-        width: 100%; /* Botón ocupará todo el ancho disponible */
+        width: 100%; /* Botón ocupará el ancho completo */
         margin-left: 0; /* Elimina márgenes laterales */
         margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    footer {
+        padding: 20px; /* Ajusta el padding del footer para mejor visualización */
     }
 }
